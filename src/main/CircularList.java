@@ -20,6 +20,9 @@ public class CircularList {
     Node head = null;
     Node tail = null;
 
+    CircularList() {
+        tail.next = head;
+    }
 
 
 }
