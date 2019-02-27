@@ -20,9 +20,7 @@ public class CircularList {
     Node head = null;
     Node tail = null;
 
-    CircularList() {
-        tail.next = head;
-    }
+
 
     public static void main(String[] args) {
         CircularList list = new CircularList();
@@ -42,6 +40,6 @@ public class CircularList {
             temp=temp.next;
         }
         response.append("]");
-        return response;
+        return response.toString();
     }
 }
