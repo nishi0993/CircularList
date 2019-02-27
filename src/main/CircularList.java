@@ -29,4 +29,19 @@ public class CircularList {
         System.out.println(list);
     }
 
+    @Override
+    public String toString() {
+        StringBuilder response = new StringBuilder();
+        response.append("[");
+        Node temp =this.head;
+        while(temp!=null){
+            response.append(temp.data);
+            if(temp.next!=null){
+                response.append(" ==> ");
+            }
+            temp=temp.next;
+        }
+        response.append("]");
+        return response;
+    }
 }
