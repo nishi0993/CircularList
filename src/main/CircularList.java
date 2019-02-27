@@ -24,5 +24,9 @@ public class CircularList {
         tail.next = head;
     }
 
+    public static void main(String[] args) {
+        CircularList list = new CircularList();
+        System.out.println(list);
+    }
 
 }
